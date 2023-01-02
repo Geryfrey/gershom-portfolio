@@ -1,140 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width,initial-scaled=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gershom's Portfolio</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+	 <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="style.css">
-<title>Gershom's website</title>
 </head>
 <body>
-	<!----hero Section start---->
 
-	<div class="hero">
-		<nav>
-			<h2 class="logo">Ger<span>shom.</span></h2>
-			<ul>
-			
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-			</ul>
-			<a href="contact.html" class="btn">Hire Me</a>
-		</nav>
+	<!----header design--->
+	<header>
+		<a href="#" class="logo">Ger<span>shom.</span></a>
 
-		<div class="content">
-			
-			<h1>Problem solving
-				And <span>Creative Thinking by Choice</span></h1>
-			<h3>The person you need to look for when you need UI/UX Designs,
-				 Web Applications and All else about Code-tools.</h3>
+		<ul class="navlist">
+			<li><a href="index.html" class="active">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+		</ul>
 
-				
-			<a href="contact.html" class="button-one">Hire Me</a>
-				<a href="blog.html" class="button1">Read My Blog</a>
+		<div class="bx bx-menu" id="menu-icon">
 			
-	     </div>
-		 <div class=""> <img src="img/img1.png" class="herophoto"></div> 
-		 <div class="hero-para">You should not be left alone in the journey,
-			 hire me as your companion and be sure to get help with technical  concerns of your business.</div>
-		
-	</div>
+		</div>
 
-	<!----About section start---->
-	<section class="about">
-		<div class="main">
-			<div class="about-photo"><img src="img/img3-nobg.png"></div>
-			<div class="about-text">
-				<h2>About Me</h2>
-				<h5>Developer <span>& Designer</span></h5>
-				<p>I am a passionate web designer and developer. Throughout the past 1 year,
-					 I challenged myself to come up with good understanding of <span>code tools</span> and their relation in daily business transactions.</p>
-			
-					 <div class="para2">You and I can make good partners</div>
-					 <span class="new-butt2"><a href="contact.html" class="btn"> Schedule A Call</a></span>
+	</header>
+
+	<!----home section design--->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h2>Problem solving</h2>
+			<h3>And<span> Creative Thinking by Choice </span></h3>
+			<p>The person you need to look for when you <br>need UI/UX Designs, Web Applications and
+			<br>All else about Code-tools.</p>
+			<div class="button">
+				<a href="contact.html" class="btn">Hire Me</a>
+				<a href="blog.html" class="btn2">Read My Blog</a>
 			</div>
+		</div>
+	<div class="hero-photo">
+		<img src="img/img1.png" alt="">
+	</div>
+	</section>
+
+	<!----about section design--->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="img/img1.png">
+    </div>
+
+    <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Developer <span>& Designer</span></h4>
+        <p>I am a passionate web designer and developer.
+         Throughout the past 1 year, I challenged myself to come up
+        with good understanding of<span> code tools </span>and their relation in daily business transactions.</p>
+        <a href="about.html" class="btn3">Schedule A Call</a>
+    </div>
+</section>
+   
+
+	<!----service section design--->
+	<section class="services" id="services">
+		<div class="main-text">
+			<!-- <p>What I am Expert In</p> -->
+			<h2>Services <span>We offer</span></h2>
+		</div>
+
+		<div class="services-content">
+			<div class="box">
+				<div class="s-icons">
+					<i class='fas fa-bars' ></i>
+				</div>
+				<h3>UI/UX Design</h3>
+				<p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='fas fa-user' ></i>
+				</div>
+				<h3>Web Development</h3>
+				<p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='far fa-bell' ></i>
+				</div>
+				<h3>App Development</h3>
+				<p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
 		</div>
 	</section>
 
-	<!-----service section start----------->
-	<div class="service">
-		<div class="title">
-			<h2>Services We Offer</h2>
+	<!----portfolio section design--->
+	<section class="portfolio" id="portfolio">
+		<div class="main-text">
+			<p>Portfolio</p>
+			<h2><span>Here are</span> Some of the Projects I worked on</h2>
 		</div>
 
-		<div class="box">
-			<div class="card">
-				<i class="fas fa-bars"></i>
-				<h5>UI/UX Design</h5>
-				<div class="pra">
-					<p>
-						From graphics to web designs,
-						 I make sure that everything fits perfectly into the plan.
-
-
-					</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="blog.html">Learn More</a>
-					</p>
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="img/portfolio1.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
 				</div>
 			</div>
 
-			<div class="card">
-				<i class="far fa-user"></i>
-				<h5>Web Development</h5>
-				<div class="pra">
-					<p>From graphics to web designs,
-						I make sure that everything fits perfectly into the plan.
-</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="blog.html">Learn More</a>
-					</p>
+			<div class="row">
+				<img src="img/portfolio2.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
 				</div>
 			</div>
 
-			<div class="card">
-				<i class="far fa-bell"></i>
-				<h5>App Development</h5>
-				<div class="pra">
-					<p>From graphics to web designs,
-						I make sure that everything fits perfectly into the plan.
-</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="blog.html">Learn More</a>
-					</p>
+			<div class="row">
+				<img src="img/portfolio3.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<!------Contact Me------>
-	<div class="contact-me">
-		<p>Let Me Help You Develop a Fully Responsive Web App.</p>
-		<a class="button-two" href="contact.html">Hire Me</a>
-	</div>
+			<div class="row">
+				<img src="img/portfolio4.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
 
-	<!------footer start--------->
-	<footer>
-		<p>Gershom IMFURA</p>
-		<p>If you want to contact me later, consider reaching out to me via social media:</p>
-		<div class="social">
-			<a href="#"><i class="fab fa-facebook-f"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-dribbble"></i></a>
+			<div class="row">
+				<img src="img/portfolio5.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/portfolio6.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
 		</div>
-		<p class="end">Copyright By Gershom Imfura</p>
-	</footer>
+	</section>
+
+	<!----contact section design--->
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Contact <span>Me!</span></h2>
+			<h4>If You Have Any Project In Your Mind.</h4>
+			<p>I'm a Web/App Developer & Designer - creating bold & brave interface design for companies all across the world.</p>
+			<div class="list">
+				<li><a href="#">0780951745</a></li>
+				<li><a href="#">gershimfura@gmail.com</a></li>
+				<li><a href="#">Like Share & Subscribe</a></li>
+			</div>
+
+			<div class="contact-icons">
+				<a href="#"><i class='bx bxl-facebook' ></i></a>
+				<a href="#"><i class='bx bxl-twitter' ></i></a>
+				<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+				<a href="#"><i class='bx bxl-youtube' ></i></a>
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<form action="">
+				<input type="name" placeholder="Your Name" required>
+				<input type="email" placeholder="Your Email Address" required>
+				<input type="" placeholder="Your Mobile Number" required>
+				<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+				<input type="submit" value="Send Message" class="submit" required>
+			</form>
+		</div>
+	</section>
+
+	<!----end section design--->
+	<section class="end">
+		<div class="last-text">
+			<p>Copyright © 2022 by Gershom IMFURA All Rights Reserved.</p>
+		</div>
+
+		<div class="top">
+			<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+		</div>
+	</section>
+
+	<!---custom js link--->
+	<script type="text/javascript" src="valid.js"></script>
+
 </body>
 </html>

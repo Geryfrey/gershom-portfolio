@@ -1,41 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gershom's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gershom's Portfolio</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	 <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <!----About Section start---->
 
-	<div class="hero">
-		<nav>
-			<h2 class="logo">Ger<span>shom.</span></h2>
-			<ul>
-			
-				<li><a href="index.html">Home</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-			</ul>
-			<a href="contact.html" class="btn">Hire Me</a>
-		</nav>
+	<!----header design--->
+	<header>
+		<a href="#" class="logo">Ger<span>shom.</span></a>
 
-        <div class="about1-photo"><img src="img/img3-nobg.png"></div>
-        <div class="new-aboutme">About Me</div>
-        <div class="new-head"><h5>Developer <span>& Designer</span></h5></div>
-        <div class="new-para"><p>I am a passionate web designer and developer. Throughout the past 1 year,
-            I challenged myself to come up with good understanding of <span>code tools</span> and their relation in daily business transactions.</p>
-</p></div>
-<div class="new-para1">You and I can make good partners</div>
-<span class="new-butt1"><a href="contact.html" class="btn"> Schedule A Call</a></span>
+		<ul class="navlist">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html" class="active">About Me</a></li>
+			<li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+		</ul>
+
+		<div class="bx bx-menu" id="menu-icon">
+		</div>
+
+	</header>
+<!----about section design--->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="img/img1.png">
+    </div>
+
+    <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Developer <span>& Designer</span></h4>
+        <p>I am a passionate web designer and developer.
+         Throughout the past 1 year, I challenged myself to come up
+        with good understanding of<span> code tools </span>and their relation in daily business transactions.</p>
+        <a href="contact.html" class="btn3">Schedule A Call</a>
+    </div>
+</section>
+
+<!----contact section design--->
+<section class="contact" id="contact">
+    <div class="contact-text">
+        <h2>Contact <span>Me!</span></h2>
+        <h4>If You Have Any Project In Your Mind.</h4>
+        <p>I'm a UI/UX Designer - creating bold & brave interface design for companies all across the world.</p>
+        <div class="list">
+            <li><a href="#">0780951745</a></li>
+            <li><a href="#">gershimfura@gmail.com</a></li>
+            <li><a href="#">Like Share & Subscribe</a></li>
+        </div>
+
+        <div class="contact-icons">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <form action="">
+            <input type="name" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email Address" required>
+            <input type="" placeholder="Your Mobile Number" required>
+            <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+            <input type="submit" value="Send Message" class="submit" required>
+        </form>
+    </div>
+
+</section>
+	<!----end section design--->
+	<section class="end">
+		<div class="last-text">
+			<p>Copyright © 2022 by Gershom IMFURA All Rights Reserved.</p>
+		</div>
+
+		<div class="top">
+			<a href="index.html"><i class='bx bx-up-arrow-alt' ></i></a>
+		</div>
+	</section>
+
+	<!---custom js link--->
+	<script type="text/javascript" src="valid.js"></script>
 
 </body>
 </html>

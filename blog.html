@@ -1,83 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gershom's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gershom's Portfolio</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	 <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
-<body style="background-color:#BE81EE;">
-    <div class="hero">
-		<nav>
-			<h2 class="logo">Ger<span>shom.</span></h2>
-			<ul>
+<body>
+
+	<!----header design--->
+	<header>
+		<a href="#" class="logo">Ger<span>shom.</span></a>
+
+		<ul class="navlist">
+			<li><a href="index.html" >Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="services.html">Services</a></li>
+            <li><a href="blog.html"class="active">Blog</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+		</ul>
+
+		<div class="bx bx-menu" id="menu-icon">
 			
-				<li><a href="index.html">Home</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-			</ul>
-			<a href="contact.html" class="btn">Hire Me</a>
-		</nav>
+		</div>
 
-<div class="myblog"><p class="blogtit">My Blog</p></div>
-<div class="featured" >
-     <img src="img/git.jpg" class="feature-pic"/>
-    </div>
-<div class="feature-top">How to deploy your project to Github</div>
-<div class="feature-para"><p>If you have wondered
-     how you can deploy your project to github and enjoy the free hosting!</p>
-     <a href="blog.html" class="button2">Read More</a>
-    </div>
-<div class="blogpost">
-<img src="img/tech.jpg" alt="" class="blog1-pic">
-    <div class="tag">Tech</div>
-    <div class="feat-top">Featured Post</div>
-    <div class="feat-date">Dec 11</div>
-</div>
-<div class="feat-post">If you have wondered how
-     you can deploy your project to github and enjoy the free hosting!</div>
-     <a href="blog.html" class="button3">Continue Reading...</a>
-     <div class="line"></div>
-
-<div class="blogpost2">
-<img src="img/seed.webp" alt="" class="blog2-pic">
-        <div class="tag2">Tech</div>
-        <div class="feat-top2">Featured Post</div>
-        <div class="feat-date2">Dec 12</div>
-    </div>
-    <div class="feat-post2">If you have wondered how
-         you can deploy your project to github and enjoy the free hosting!</div>
-         <a href="blog.html" class="button4">Continue Reading...</a>
-</div>
-
-
-<div class="blogpost3">
-    <img src="img/tech.jpg" alt="" class="blog3-pic">
-        <div class="tag3">Tech</div>
-        <div class="feat-top3">Featured Post</div>
-        <div class="feat-date3">Dec 11</div>
-    </div>
-    <div class="feat-post3">If you have wondered how
-         you can deploy your project to github and enjoy the free hosting!</div>
-         <a href="blog.html" class="button5">Continue Reading...</a>
-         <div class="line"></div>
-    
-    <div class="blogpost4">
-    <img src="img/seed.webp" alt="" class="blog4-pic">
-            <div class="tag4">Tech</div>
-            <div class="feat-top4">Featured Post</div>
-            <div class="feat-date4">Dec 12</div>
+	</header>
+<body>
+    <section class="blog">
+    <div class="container">
+        <div class="blog-post">
+            <div class="blog-post_img">
+                <img src="img/git.jpg"
+                    alt="">
+            </div>
+            <div class="blog-post_info">
+                <div class="blog-post_date">
+                    <span>Web Developer</span>
+                    <span>Nov 12 2021</span>
+                </div>
+                <h1 class="blog-post_title">Lorem ipsum dolor sit amet.</h1>
+                <p class="blog-post_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores a, tempore veniam quasi sint fugiat
+                    facilis, facere, amet magnam optio velit. Laudantium et temporibus soluta, esse cupiditate aliquid
+                    dicta
+                    accusantium.
+                </p>
+                <a href="#" class="blog-post_cta">Read More</a>
+            </div>
         </div>
-        <div class="feat-post4">If you have wondered how
-             you can deploy your project to github and enjoy the free hosting!</div>
-             <a href="blog.html" class="button6">Continue Reading...</a>
+
+        <div class="blog-post">
+            <div class="blog-post_img">
+                <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="blog-post_info">
+                <div class="blog-post_date">
+                    <span>App Developer</span>
+                    <span>Dec 25 2021</span>
+                </div>
+                <h1 class="blog-post_title">Lorem ipsum dolor sit amet.</h1>
+                <p class="blog-post_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores a, tempore veniam quasi sint fugiat
+                    facilis, facere, amet magnam optio velit. Laudantium et temporibus soluta, esse cupiditate aliquid
+                    dicta
+                    accusantium.
+                </p>
+                <a href="#" class="blog-post_cta">Read More</a>
+            </div>
+        </div>
+
     </div>
+</section>
+
+	<!----end section design--->
+	<section class="end">
+		<div class="last-text">
+			<p>Copyright © 2022 by Gershom IMFURA All Rights Reserved.</p>
+		</div>
+
+		<div class="top">
+			<a href="home.html"><i class='bx bx-up-arrow-alt' ></i></a>
+		</div>
+	</section>
+
+	<!---custom js link--->
+	<script type="text/javascript" src="valid.js"></script>
 </body>
+
 </html>
+        
