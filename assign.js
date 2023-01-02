@@ -24,11 +24,11 @@ Gender = state.gender;
 Mass = state.mass;
 Skincolor = state.skin_color;
 Eyecolor = state.eye_color;
-character.innerHTML += `<div id="results">
-<h3>Name:<b id="number">${Name}</b><h3>
-<h3>Gender:<b id="number">${Gender}</b><h3>
-<h3>Mass:<b id="number">${Mass}</b><h3>
-<h3>Height:<b id="number">${Height}</b><h3>
-<h3>Skin color:<b id="number">${Skincolor}</b><h3>
-<h3>Eye color:<b id="number">${Eyecolor}</b><h3>
+character.innerHTML += `<div id="results1">
+<h3 class="kem">Name:<b id="number">${Name}</b><h3>
+<h3 class="kem">Gender:<b id="number">${Gender}</b><h3>
+<h3 class="kem">Mass:<b id="number">${Mass}</b><h3>
+<h3 class="kem">Height:<b id="number">${Height}</b><h3>
+<h3 class="kem">Skin color:<b id="number">${Skincolor}</b><h3>
+<h3 class="kem">Eye color:<b id="number">${Eyecolor}</b><h3>
 </div>`;

@@ -37,7 +37,8 @@ header{
 	transition: all .45s ease;
 }
 .logo{
-	color: var(--text-color);
+	background-color: var(--text-color);
+	color: black;
 	font-size: 35px;
 	font-weight: 700;
 	letter-spacing: 1px;

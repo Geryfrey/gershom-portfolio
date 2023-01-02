@@ -27,11 +27,11 @@ fetch("https://swapi.dev/api/people/")
                 console.log(data.name);
                 // let store = JSON.stringify(data)
                 // localStorage.setItem('stone',store);
-                character.innerHTML += `<div id="results"${i}"">
-                <h3>character number:<b id="number">${i}</b><h3>
-                <h2><u>Name</u>:${data.name}</h2>
-                <h2><u>Age</u></b>:${data.birth_year}</h2>
-                <button class="btn2" id="more" onclick="mores(${i})">read more</button>
+                character.innerHTML += `<div id="results"${i}">
+                <h2 class="melo">Character :<b id="number">${i}</b><h2>
+                <h2 class="melo">Name:${data.name}</h2>
+                <h2 class="melo">Gender</b>:${data.gender}</h2>
+                <a href="#" class="btn2" id="more" onclick="mores(${i})">More Details</a>
                 </div>`;
             })}
 
@@ -44,5 +44,3 @@ let mores = (b) =>{
     
     }
 
-{/* <a href="resultpage.html">read more</a> */}
-{/* <a href="resultpage.html"></a> */}
