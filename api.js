@@ -15,9 +15,9 @@ fetch("https://swapi.dev/api/people/")
     keep = data.results;
     localStorage.setItem('keep',JSON.stringify(keep));
     console.log(keep);
-    console.log(keep.length)
+    console.log(keep.length);
     
-    console.log(keep.length)
+    console.log(keep.length);
     for(let i = 1; i < keep.length;i++){
          fetch('https://swapi.dev/api/people/' + i + '/') 
             .then((response) => {

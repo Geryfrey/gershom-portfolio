@@ -42,7 +42,7 @@
 <!----portfolio section design--->
 <section class="portfolio" id="portfolio">
     <div class="main-text">
-        <p>Portfolio</p>
+        
         <h2><span>Here are</span> Some of the Projects I worked on</h2>
     </div>
 
@@ -51,7 +51,7 @@
             <img src="img/portfolio1.jpg">
             <div class="layer">
                 <h5>Visual Design</h5>
-                <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                <p>Check out My Best Visual Design's updates for the Top Start-ups and Tech companies booming up in Rwanda.</p>
                 <a href="#"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
@@ -59,8 +59,8 @@
         <div class="row">
             <img src="img/portfolio2.jpg">
             <div class="layer">
-                <h5>Visual Design</h5>
-                <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                <h5>Web Design</h5>
+                <p>Check out my Best Web Design's updates for the Top Start-ups and Tech companies booming up in Rwanda.</p>
                 <a href="#"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
@@ -68,8 +68,8 @@
         <div class="row">
             <img src="img/portfolio3.jpg">
             <div class="layer">
-                <h5>Visual Design</h5>
-                <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                <h5>Software Apps</h5>
+                <p>Check out some of the Best Software Apps I developed for the Top Start-ups and Tech companies booming up in Rwanda.</p>
                 <a href="#"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
@@ -77,8 +77,8 @@
         <div class="row">
             <img src="img/portfolio4.jpg">
             <div class="layer">
-                <h5>Visual Design</h5>
-                <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                <h5>Application Dev</h5>
+                <p>Check out some of the best Web Apps I have built with tech teams for the Top Start-ups and Tech companies booming up in Rwanda.</p>
                 <a href="#"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
@@ -86,8 +86,8 @@
         <div class="row">
             <img src="img/portfolio5.jpg">
             <div class="layer">
-                <h5>Visual Design</h5>
-                <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                <h5>DevOps Engineering</h5>
+                <p>Ever thought of hiring DevOps Engineer, Here are some of the best products I built for the Top Start-ups and Tech companies booming up in Rwanda.</p>
                 <a href="#"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
@@ -95,8 +95,8 @@
         <div class="row">
             <img src="img/portfolio6.jpg">
             <div class="layer">
-                <h5>Visual Design</h5>
-                <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                <h5>Virtual Machines</h5>
+                <p>Ever thought of using virtual machines, take a look at these projects I did for the Top Start-ups and Tech companies booming up in Rwanda.</p>
                 <a href="#"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
@@ -104,13 +104,14 @@
     </div>
 </section>
 
+
 <!----contact section design--->
 <section class="contact" id="contact">
     <div class="contact-text">
         <h2>Contact <span>Me!</span></h2>
-        <h4>If You Have Any Project In Your Mind.</h4>
-        <p>I'm a UI/UX Designer - creating bold & brave interface design for companies all across the world.</p>
-        <div class="list">
+        <h4>Do You Have Any Project In Your Mind, Reach Out To Me.</h4>
+        <p>I'm a Web/App Developer & Designer - Creating bold & brave interfaces/UI/UX designs and Coding Service for companies in Rwanda.</p>
+    <div class="list">
             <li><a href="#">0780951745</a></li>
             <li><a href="#">gershimfura@gmail.com</a></li>
             <li><a href="#">Like Share & Subscribe</a></li>
@@ -125,14 +126,22 @@
     </div>
 
     <div class="contact-form">
-        <form action="">
-            <input type="name" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email Address" required>
-            <input type="" placeholder="Your Mobile Number" required>
-            <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
-            <input type="submit" value="Send Message" class="submit" required>
-        </form>
-    </div>
+        <form action=""></form>
+        <input type="name" placeholder="Your Name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+
+        <input type="" placeholder="+250-780951745" id="contact-phone" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+        
+        <input type="email" placeholder="Your Email Address" id="contact-email" onkeyup="validate()">
+        <span id="email-error"></span>
+        
+        <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" onkeyup="validateMessage()"></textarea>
+        <span id="message-error"></span>
+        <input type="submit" value="Send Message" class="submit" onclick="return validateForm()">
+        <span id="submit-error"></span>
+    </form>
+</div>
 </section>
 
 <!----end section design--->

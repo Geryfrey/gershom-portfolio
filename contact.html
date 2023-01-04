@@ -43,8 +43,8 @@
 	<section class="contact" id="contact">
 		<div class="contact-text">
 			<h2>Contact <span>Me!</span></h2>
-			<h4>If You Have Any Project In Your Mind.</h4>
-			<p>I'm a UI/UX Designer - creating bold & brave interface design for companies all across the world.</p>
+			<h4>Do You Have Any Project In Your Mind, Reach Out To Me.</h4>
+			<p>I'm a Web/App Developer & Designer - Creating bold & brave interfaces/UI/UX designs and Coding Service for companies in Rwanda.</p>
 			<div class="list">
 				<li><a href="#">0780951745</a></li>
 				<li><a href="#">gershimfura@gmail.com</a></li>
@@ -58,15 +58,23 @@
 				<a href="#"><i class='bx bxl-youtube' ></i></a>
 			</div>
 		</div>
-
+		<form action="">
 		<div class="contact-form">
-			<form action="">
-				<input type="name" placeholder="Your Name" required>
-				<input type="email" placeholder="Your Email Address" required>
-				<input type="" placeholder="Your Mobile Number" required>
-				<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
-				<input type="submit" value="Send Message" class="submit" required>
-			</form>
+			<input type="name" placeholder="Your Name" id="contact-name" onkeyup="validateName()">
+			<span id="name-error"></span>
+
+			<input type="" placeholder="+250-780951745" id="contact-phone" onkeyup="validatePhone()">
+			<span id="phone-error"></span>
+			
+			<input type="email" placeholder="Your Email Address" id="contact-email" onkeyup="validate()">
+			<span id="email-error"></span>
+			
+			<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" onkeyup="validateMessage()"></textarea>
+			<span id="message-error"></span>
+			<input type="submit" value="Send Message" class="submit" onclick="return validateForm()">
+			<span id="submit-error"></span>
+		</form>
+
 		</div>
 	</section>
 
